@@ -1,0 +1,23 @@
+#include<stdio.h>
+void main()
+{
+	int a,t,sum=0,n ;
+	printf("Enter Your Number: ");//Get Number from user
+	scanf("%d",&a);
+	t=a;
+	while(n>0)
+	{
+		n=a%10;//Formula of geting armstrong number
+		sum+=n*n*n;
+		a/=10;
+	}
+	if(t==sum)//Using conditional operator
+	{
+		printf("Your Given Number Is Armstrong ");
+	}
+	else//Using conditional operator
+	{
+		printf("Your Given Number Is Not Armstrog");
+	}
+	return 0;
+}
